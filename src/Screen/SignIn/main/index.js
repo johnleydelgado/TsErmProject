@@ -21,9 +21,10 @@ const index = ({ store, navigation }) => {
           width: "80%",
           height: 80,
           borderRadius: 16,
+          paddingTop:32,
           borderColor: "tomato",
           borderWidth: 1,
-          color: "white",
+          color: "black",
           marginBottom: 16
         }}
       />

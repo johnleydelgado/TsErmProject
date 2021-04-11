@@ -5,7 +5,7 @@
     <CppWinRTOptimized>true</CppWinRTOptimized>
     <CppWinRTRootNamespaceAutoMerge>true</CppWinRTRootNamespaceAutoMerge>
     <MinimalCoreWin>true</MinimalCoreWin>
-    <ProjectGuid>{bb529135-c8cb-485d-afc3-c2bb22015736}</ProjectGuid>
+    <ProjectGuid>{db4989b0-677e-40b2-9645-a0ce2c8b6b0a}</ProjectGuid>
     <ProjectName>emr</ProjectName>
     <RootNamespace>emr</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
@@ -16,6 +16,7 @@
     <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.18362.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.16299.0</WindowsTargetPlatformMinVersion>
     <PackageCertificateKeyFile>emr_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>96271CCE4136DD194795CAAD82835175EA0A9FAD</PackageCertificateThumbprint>
     <PackageCertificatePassword>password</PackageCertificatePassword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

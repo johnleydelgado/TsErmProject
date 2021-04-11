@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="2c466f11-3126-4b6f-bb67-7d40a65316a7"
-    Publisher="CN=Ley"
+    Name="422ddaf7-bf69-4dd5-a336-4f8f946fc2bb"
+    Publisher="CN=chinet"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="2c466f11-3126-4b6f-bb67-7d40a65316a7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="422ddaf7-bf69-4dd5-a336-4f8f946fc2bb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>emr</DisplayName>
-    <PublisherDisplayName>Ley</PublisherDisplayName>
+    <PublisherDisplayName>chinet</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
