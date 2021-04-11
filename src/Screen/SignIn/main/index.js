@@ -1,5 +1,5 @@
 //import liraries
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
   Text,
@@ -43,6 +43,29 @@ const index = ({ store, navigation }) => {
       });
   };
 
+  useEffect(() => {
+    const subscribe = navigation.addListener("focus", () => {
+      db.localDB.replicate
+        .to(db.remoteDB)
+        .on("complete", function () {
+          console.log("success");
+        })
+        .on("error", function (err) {
+          console.log(err);
+        });
+
+      db.remoteDB.replicate
+        .to(db.localDB)
+        .on("complete", function () {
+          console.log("success");
+        })
+        .on("error", function (err) {
+          console.log(err);
+        });
+    });
+
+    return subscribe;
+  }, [navigation]);
   return (
     <View style={styles.container}>
       <TextInputs title="ID" onChange={(text) => (store.patient.id = text)} />
