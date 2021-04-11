@@ -5,7 +5,8 @@ import {
   Text,
   StyleSheet,
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
+  Platform
 } from "react-native";
 import { db } from "../../../Services";
 import { inject, observer } from "mobx-react";
@@ -21,7 +22,7 @@ const index = ({ store, navigation }) => {
           width: "80%",
           height: 80,
           borderRadius: 16,
-          paddingTop:32,
+          paddingTop: Platform.OS == "windows" ? 32 : 0,
           borderColor: "tomato",
           borderWidth: 1,
           color: "black",
